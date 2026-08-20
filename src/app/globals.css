@@ -2,35 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== DESIGN TOKENS ===== */
-/* Replace these values with client brand colors */
+/* ===== DESIGN TOKENS — sprayfoamrigrental.com ===== */
+/* Mahogany-rust + amber-honey, warm ivory-parchment base. Distinct from every other
+   fleet build this batch: first build with no green secondary accent. */
 
 @layer base {
 :root {
-  --background: 240 10% 4%;          /* #0a0a0f */
-  --foreground: 214 32% 91%;          /* #e2e8f0 */
+  --background: 36 42% 95%;           /* #F7F0E4 warm ivory-parchment */
+  --foreground: 20 30% 12%;           /* #291D14 espresso-brown text */
 
-  --card: 222 47% 7%;                 /* #0d1117 */
-  --card-foreground: 214 32% 91%;     /* #e2e8f0 */
+  --card: 34 40% 91%;                 /* #F1E5D4 */
+  --card-foreground: 20 30% 12%;
 
-  --primary: 217 91% 60%;             /* #3b82f6 — replace with brand */
-  --primary-foreground: 0 0% 100%;    /* #ffffff */
+  --primary: 16 60% 32%;              /* #82401F mahogany-rust */
+  --primary-dark: 16 62% 22%;         /* #5C2C15 */
+  --primary-foreground: 36 42% 96%;
 
-  --secondary: 215 20% 15%;           /* #1e293b */
-  --secondary-foreground: 214 32% 91%;
+  --secondary: 32 38% 84%;            /* #E7D5BC warm sand */
+  --secondary-foreground: 20 30% 12%;
 
-  --accent: 190 95% 39%;              /* #06b6d4 — replace with brand */
-  --accent-foreground: 0 0% 100%;
+  --accent: 38 70% 47%;               /* #C88A26 amber-honey */
+  --accent-dark: 36 65% 34%;          /* #96661C */
+  --accent-foreground: 20 30% 12%;
 
-  --muted: 215 20% 15%;               /* #1e293b */
-  --muted-foreground: 215 16% 62%;    /* #94a3b8 */
+  --muted: 34 40% 90%;                /* #F0E4D2 muted sand */
+  --muted-foreground: 25 18% 40%;     /* #7A6353 */
 
-  --destructive: 0 84% 60%;           /* #ef4444 */
-  --destructive-foreground: 0 0% 100%;
+  --charcoal: 20 30% 10%;             /* #221812 dark contrast band */
+  --charcoal-foreground: 36 40% 90%;  /* #ECDFC9 */
 
-  --border: 215 20% 15%;              /* #1e293b */
-  --input: 215 20% 15%;
-  --ring: 217 91% 60%;                /* same as primary */
+  --destructive: 6 62% 42%;           /* #A83B27 */
+  --destructive-foreground: 36 42% 96%;
+
+  --border: 32 35% 78%;               /* #D9C4A3 */
+  --input: 32 35% 78%;
+  --ring: 16 60% 32%;
 
   --radius: 0.75rem;
 }
@@ -49,72 +55,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 } /* close @layer base */
 
-/* ===== ANIMATIONS ===== */
-
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-/* ===== REDUCED MOTION ===== */
-
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* ===== SELECTION ===== */
-
-::selection {
-  background: hsl(var(--primary) / 0.3);
-  color: hsl(var(--foreground));
-}
-
-/* ===== SCROLLBAR (optional, dark mode) ===== */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: hsl(var(--background));
-}
-::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted));
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--muted-foreground));
-}
-
-/* ===== TOUCH TARGETS (WCAG 2.5.5 / 2.5.8) ===== */
-/* Source-level 44px floor so every built site clears QA's touch-target gate at source. */
-/* Adopted 2026-07-02 (pledge ce9b58fc) — traces to QA-manager's 36brickhouse NO-SHIP lesson. */
-/* In @layer base so it is a genuine FLOOR: `min-height` beats any `h-*` fixed-height utility */
-/* (min-height always wins over a smaller height), while an explicit `min-h-*` utility can still */
-/* opt a control out deliberately. Keeps Tailwind's cascade intact. */
-@layer base {
-  button,
-  [role="button"],
-  a.btn,
-  select,
-  textarea,
-  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="hidden"]),
-  .edge-tab {
-    min-height: 44px;
-  }
-
-  /* Icon-only buttons collapse below 44px wide without a width floor too. */
-  button.icon,
-  .btn-icon,
-  [data-icon-only] {
-    min-width: 44px;
-  }
+/* Trailer-hitch coupling motif — subtle repeating linked-oval pattern for band texture */
+.band-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: radial-gradient(circle at 10px 10px, currentColor 2px, transparent 2.5px);
+  background-size: 40px 40px;
 }
