@@ -30,7 +30,7 @@ const COMPONENTS = [
     icon: Gauge,
     title: "Proportioner",
     description:
-      "The core metering and heating unit. It draws the two liquid chemical components from separate drums, heats and pressurizes each, and mixes them in a precise ratio before they reach the hose. Output rating (how much material it can push per minute) is what determines whether a rental unit can keep up with a given job size — a unit sized for small residential work will bottleneck a large commercial pour.",
+      "The core metering and heating unit. It draws the two liquid chemical components from separate drums, heats and pressurizes each, and mixes them in a precise ratio before they reach the hose. Output rating (how much material it can push per minute) is what determines whether a rental unit can keep up with a given job size — a unit sized for small residential work will bottleneck a large commercial pour. Ask a rental provider for the unit's rated output, not just its brand name, before assuming it fits your job.",
     image: "/images/proportioner-closeup.jpg",
     alt: "Close-up of a spray foam proportioner unit",
   },
@@ -38,7 +38,7 @@ const COMPONENTS = [
     icon: Droplet,
     title: "Spray Gun",
     description:
-      "The application tool where the two chemical components finally combine and get sprayed onto the surface. Gun type and the condition of its internal mixing chamber directly affect spray pattern and finish quality — a poorly maintained rental gun can produce uneven coverage even if the proportioner behind it is dialed in correctly.",
+      "The application tool where the two chemical components finally combine and get sprayed onto the surface. Gun type and the condition of its internal mixing chamber directly affect spray pattern and finish quality — a poorly maintained rental gun can produce uneven coverage even if the proportioner behind it is dialed in correctly. Tip size also affects output rate, so the gun that ships with a rental unit should match the job's expected pace, not just its chemistry.",
     image: "/images/spray-gun-application.jpg",
     alt: "Spray gun applying spray foam insulation",
   },
@@ -46,7 +46,7 @@ const COMPONENTS = [
     icon: Thermometer,
     title: "Heated Hose",
     description:
-      "Runs the two chemical components from the proportioner to the gun, keeping both lines at a consistent, matched temperature over the length of the run. Temperature control along the hose matters because the chemistry only reacts correctly within a specific range — a cold spot anywhere along a hose run can throw off the mix at the tip. Rental hose lengths vary by provider and job type.",
+      "Runs the two chemical components from the proportioner to the gun, keeping both lines at a consistent, matched temperature over the length of the run. Temperature control along the hose matters because the chemistry only reacts correctly within a specific range — a cold spot anywhere along a hose run can throw off the mix at the tip. Rental hose lengths vary by provider and job type; a shorter standard length may mean staging the rig closer to the work than you'd planned, so it's worth confirming length before delivery day.",
     image: "/images/heated-hose-coil.jpg",
     alt: "Coiled heated hose used in spray foam rigs",
   },
@@ -54,7 +54,7 @@ const COMPONENTS = [
     icon: Zap,
     title: "Generator / Power Requirements",
     description:
-      "Most rigs run on an onboard generator since the proportioner's heaters and pumps need stable, sustained power, often at jobsites with no other electricity available. Rigs are typically either electric-powered (needing a suitable on-site power hookup) or gas/generator-powered (self-contained but requiring fuel logistics) — which setup a rental provider offers affects where and how the rig can actually be used.",
+      "Most rigs run on an onboard generator since the proportioner's heaters and pumps need stable, sustained power, often at jobsites with no other electricity available. Rigs are typically either electric-powered (needing a suitable on-site power hookup) or gas/generator-powered (self-contained but requiring fuel logistics) — which setup a rental provider offers affects where and how the rig can actually be used. If a site has no reliable power source, confirm the rental unit is genuinely self-contained before it's too late to swap.",
     image: "/images/generator-power-unit.jpg",
     alt: "Generator power unit for a spray foam rig",
   },
@@ -65,13 +65,13 @@ const MATERIAL_TYPES = [
     icon: Flame,
     title: "Closed-Cell Foam",
     description:
-      "Denser, higher R-value per inch, and adds structural rigidity. Commonly used where moisture resistance and a vapor barrier matter — roof decks, rim joists, below-grade applications. Requires equipment calibrated for its specific mix ratio and pressure requirements.",
+      "Denser, higher R-value per inch, and adds structural rigidity. Commonly used where moisture resistance and a vapor barrier matter — roof decks, rim joists, below-grade applications. Requires equipment calibrated for its specific mix ratio and pressure requirements, and its higher density generally means a proportioner working harder per pound sprayed than it would on open-cell material.",
   },
   {
     icon: Snowflake,
     title: "Open-Cell Foam",
     description:
-      "Lighter, more flexible, and typically lower cost per board foot. Common in interior wall cavities and attics where sound dampening and air sealing are the priority over vapor-barrier performance. Different chemistry means different calibration than closed-cell — a rig set up for one isn't automatically ready for the other.",
+      "Lighter, more flexible, and typically lower cost per board foot. Common in interior wall cavities and attics where sound dampening and air sealing are the priority over vapor-barrier performance. Different chemistry means different calibration than closed-cell — a rig set up for one isn't automatically ready for the other, and switching a proportioner between the two materials mid-week without proper flushing and recalibration is a common source of off-ratio foam.",
   },
 ];
 
@@ -111,6 +111,14 @@ export default function EquipmentAvailablePage() {
             When a rental provider quotes &quot;a rig,&quot; what&apos;s actually included in
             that quote can vary — which is exactly why it&apos;s worth understanding each piece
             individually before you compare providers.
+          </p>
+          <p>
+            Rigs also come in different output tiers. A unit built for occasional residential
+            attic and crawl-space work is sized very differently than one built for daily
+            commercial roofing and large-envelope jobs — and a provider&apos;s standard rental
+            unit isn&apos;t automatically the right size for every job. Knowing what each
+            component does makes it possible to ask a provider the right sizing questions instead
+            of just accepting whatever&apos;s available that week.
           </p>
         </FadeIn>
       </Section>
