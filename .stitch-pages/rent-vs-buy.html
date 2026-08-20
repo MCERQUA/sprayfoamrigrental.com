@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rent vs Buy - Spray Foam Rig Rental Guide | Contractors Choice Agency</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config injected from Design System -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#82401F',
+                        'accent': '#C88A26',
+                        'background': '#F7F0E4',
+                        'surface-dark': '#221812',
+                        'surface-light': '#FFFFFF',
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Work Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Custom Accordion Logic via CSS where possible, JS fallback for complex state */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-surface-dark font-body antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (Semantic Shell) -->
+<nav class="bg-[#F7F0E4] dark:bg-[#221812] sticky top-0 z-50 shadow-sm border-b border-[#C88A26]/20">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline text-xl font-bold text-[#82401F] tracking-tight" href="#">Contractors Choice Agency</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8">
+<!-- Active Item Logic applied to 'Rent vs Buy' based on page intent -->
+<a class="font-body text-label-md text-[#82401F] font-bold border-b-2 border-[#82401F] pb-1 active:opacity-80 transition-opacity" href="#">Rent vs Buy</a>
+<a class="font-body text-label-md text-[#221812] dark:text-[#F7F0E4] hover:text-[#82401F] hover:bg-[#C88A26]/10 transition-colors px-2 py-1 rounded" href="#">Equipment</a>
+<a class="font-body text-label-md text-[#221812] dark:text-[#F7F0E4] hover:text-[#82401F] hover:bg-[#C88A26]/10 transition-colors px-2 py-1 rounded" href="#">Guides</a>
+<a class="font-body text-label-md text-[#221812] dark:text-[#F7F0E4] hover:text-[#82401F] hover:bg-[#C88A26]/10 transition-colors px-2 py-1 rounded" href="#">About</a>
+</div>
+<!-- Trailing Action -->
+<button class="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-white font-label font-semibold rounded-full hover:bg-opacity-90 transition-all shadow-md active:scale-95">
+                Get Matched
+            </button>
+<!-- Mobile Menu Toggle (Decorative) -->
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- 1. Hero Band -->
+<section class="relative pt-24 pb-32 px-6 lg:px-8 overflow-hidden">
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-accent opacity-10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+<div class="w-full lg:w-1/2 space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-label text-sm font-semibold tracking-wide uppercase">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+                        Buyer's Guide
+                    </div>
+<h1 class="font-headline text-5xl lg:text-7xl font-bold text-primary leading-tight tracking-tight">
+                        Rent vs Buy
+                        <span class="block text-3xl lg:text-4xl text-surface-dark mt-4 font-semibold opacity-90">Is Rig Rental Right for You?</span>
+</h1>
+<p class="font-body text-lg lg:text-xl text-surface-dark/80 leading-relaxed max-w-2xl border-l-4 border-accent pl-6">
+                        An honest look at the economics of spray foam equipment. There is no single right answer—only the right choice for your current business stage.
+                    </p>
+</div>
+<div class="w-full lg:w-1/2 relative">
+<!-- High-quality image integration with proper scrim if text overlaid, though here it stands alone -->
+<div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+<div class="absolute inset-0 bg-surface-dark/20 group-hover:bg-transparent transition-all duration-500 z-10"></div>
+<img alt="Spray Foam Rig Trailer Hitch" class="w-full h-auto object-cover aspect-[4/3] transform group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLsV26YcDwKF3Q8uD-mpLQucWTd8DRoif1uYZGURtLKoaeLPhU7dJDuO8N9Hh2INC8G2_ozhVsWL-cabLlWvwFrFYXm1Ba1QagBsgXZU0eaD9jT3b8P_Pq5PMgK-1pytvKBIjUtkocYfDwd5vN2NiZXKBcU9SqZ9DgqARfhn4eeXAhLhWv8Wdqe2OV8sHCsqgFhqZUXA4GSxagADgsC1zMeUKHpeY4_tUbkfFXVK_ZLl57zl6mzvpDmD5w"/>
+</div>
+<!-- Floating Data Card (Glassmorphism hint) -->
+<div class="absolute -bottom-8 -left-8 bg-surface-light/95 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-background w-64 z-20">
+<div class="flex items-center gap-4 mb-2">
+<div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<span class="font-label text-sm font-semibold text-surface-dark/60 uppercase">Market Insight</span>
+</div>
+<p class="font-headline font-bold text-xl text-primary leading-tight">Compare True Costs</p>
+<p class="font-body text-sm text-surface-dark/70 mt-1">Factor in maintenance, downtime, and financing.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Use Case Section: Rent vs Buy Side-by-Side Asymmetric Layout -->
+<section class="py-24 px-6 lg:px-8 bg-surface-light relative">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl lg:text-5xl font-bold text-surface-dark tracking-tight">Making the Right Call</h2>
+<p class="font-body text-lg text-surface-dark/70 mt-4 max-w-2xl mx-auto">Identify which scenario aligns closest with your operational reality.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-stretch">
+<!-- 2. When Renting Makes Sense -->
+<div class="bg-background rounded-3xl p-10 lg:p-12 relative overflow-hidden group hover:shadow-lg transition-shadow border border-transparent hover:border-accent/30">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full transition-transform group-hover:scale-110"></div>
+<div class="mb-8">
+<div class="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">calendar_clock</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-primary">When Renting Typically Makes Sense</h3>
+</div>
+<ul class="space-y-6 font-body text-lg text-surface-dark">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold">Testing a new service line</strong>
+<span class="text-sm opacity-80">Minimal financial risk before committing to large capital.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold">Seasonal overflow</strong>
+<span class="text-sm opacity-80">Handling spikes in demand without permanent fleet expansion.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold">Backup equipment</strong>
+<span class="text-sm opacity-80">Maintain operations while your primary rig is serviced.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold">Starting fresh</strong>
+<span class="text-sm opacity-80">Launching a new business without a massive initial outlay.</span>
+</div>
+</li>
+</ul>
+</div>
+<!-- 3. When Buying Makes Sense -->
+<div class="bg-surface-dark text-background rounded-3xl p-10 lg:p-12 relative overflow-hidden group hover:shadow-xl transition-shadow shadow-md">
+<div class="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-bl-full transition-transform group-hover:scale-110"></div>
+<div class="mb-8">
+<div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center mb-6 text-accent backdrop-blur-sm">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</div>
+<h3 class="font-headline text-3xl font-bold text-background">When Buying Typically Makes Sense</h3>
+</div>
+<ul class="space-y-6 font-body text-lg text-background/90">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold text-white">High, steady utilization</strong>
+<span class="text-sm opacity-80">Consistent deployment of 15+ days per month.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold text-white">Full control</strong>
+<span class="text-sm opacity-80">Desire for complete maintenance and custom rig configuration.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-accent mt-1">check_circle</span>
+<div>
+<strong class="block font-semibold text-white">Long-term efficiency</strong>
+<span class="text-sm opacity-80">Lower amortized costs over years for established fleets.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Real Cost Variables Bento Grid -->
+<section class="py-24 px-6 lg:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl lg:text-5xl font-bold text-primary tracking-tight">Real Cost Variables to Weigh</h2>
+<p class="font-body text-lg text-surface-dark/70 mt-4">Look beyond the sticker price or day rate. True operational cost encompasses logistics, risk, and financing.</p>
+</div>
+<span class="material-symbols-outlined text-6xl text-accent/20 hidden md:block">scale</span>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 md:row-span-2 bg-white rounded-2xl p-8 border border-surface-dark/5 shadow-sm flex flex-col justify-between group hover:border-primary/30 transition-colors">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-4">payments</span>
+<h4 class="font-headline font-bold text-2xl text-surface-dark mb-2">Purchase Price Range &amp; Financing</h4>
+<p class="font-body text-surface-dark/70">New rigs span $60k to $150k+. Factor in current interest rates, down payment requirements, and the impact on your business's debt-to-income ratio.</p>
+</div>
+<div class="mt-8 pt-6 border-t border-background">
+<span class="text-sm font-label text-primary font-semibold uppercase tracking-wider">Capital Expenditure</span>
+</div>
+</div>
+<!-- Medium Cards -->
+<div class="bg-surface-dark text-background rounded-2xl p-6 border border-surface-dark/10 shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-accent mb-3">build_circle</span>
+<h4 class="font-headline font-bold text-xl text-white mb-2">Maintenance Risk</h4>
+<p class="font-body text-sm text-background/80">Ownership means bearing all costs for downtime, parts, and specialized labor.</p>
+</div>
+</div>
+<div class="bg-background rounded-2xl p-6 border border-surface-dark/5 shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-primary mb-3">local_shipping</span>
+<h4 class="font-headline font-bold text-xl text-surface-dark mb-2">Logistics</h4>
+<p class="font-body text-sm text-surface-dark/70">Consider secure storage, transport vehicles, and delivery fees for rentals.</p>
+</div>
+</div>
+<div class="md:col-span-2 bg-accent/10 rounded-2xl p-6 border border-accent/20 shadow-sm flex flex-row items-center gap-6">
+<div class="bg-white p-4 rounded-xl shadow-sm text-accent hidden sm:block">
+<span class="material-symbols-outlined text-4xl">calendar_month</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl text-surface-dark mb-2">Rental Pricing Models</h4>
+<p class="font-body text-sm text-surface-dark/70">Rates vary drastically based on duration. Daily rates penalize weather delays; monthly rates require solid pipeline forecasting.</p>
+</div>
+</div>
+<div class="bg-primary/10 rounded-2xl p-6 border border-primary/20 shadow-sm flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-3xl text-primary mb-3">policy</span>
+<h4 class="font-headline font-bold text-xl text-surface-dark mb-2">Insurance Reqs</h4>
+<p class="font-body text-sm text-surface-dark/70">Inland marine policies differ for owned vs. non-owned (rented) equipment.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Callout Box (Insurance Focus) -->
+<section class="py-16 px-6 lg:px-8">
+<div class="max-w-5xl mx-auto bg-white rounded-3xl p-10 lg:p-14 border-2 border-accent/20 shadow-xl relative overflow-hidden">
+<!-- Watermark Icon -->
+<span class="material-symbols-outlined absolute -bottom-10 -right-10 text-[200px] text-background opacity-50 rotate-[-15deg] pointer-events-none">shield_locked</span>
+<div class="relative z-10 flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-accent rounded-full flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-surface-dark mb-4">Either Way, Insurance Matters</h3>
+<p class="font-body text-lg text-surface-dark/80 leading-relaxed mb-6">
+                            Whether you hold the title or sign a rental agreement, protecting high-value industrial equipment is non-negotiable. Rental houses demand proof of non-owned equipment coverage, while lenders require comprehensive policies for financed rigs.
+                        </p>
+<p class="font-label font-semibold text-primary">Our agency specializes in closing these specific coverage gaps for spray foam contractors.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. FAQ Accordion -->
+<section class="py-24 px-6 lg:px-8 bg-surface-light">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-surface-dark tracking-tight">Frequently Asked Questions</h2>
+<p class="font-body text-lg text-surface-dark/70 mt-4">Clarifying the grey areas of rig acquisition.</p>
+</div>
+<div class="space-y-4 font-body">
+<!-- FAQ 1 -->
+<details class="group bg-background rounded-xl border border-surface-dark/5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-semibold text-lg text-surface-dark">
+                            How do rental terms handle maintenance breakdowns?
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-surface-dark/70 border-t border-surface-dark/5 pt-4">
+                            Most reputable rental agreements cover standard mechanical failures through a replacement or field-service model. However, user-error damages (like cured foam in lines due to improper flushing) fall squarely on the renter. Always review the "wear and tear" clauses.
+                        </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-background rounded-xl border border-surface-dark/5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-semibold text-lg text-surface-dark">
+                            Are there insurance gaps when renting vs owning?
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-surface-dark/70 border-t border-surface-dark/5 pt-4">
+                            Yes. Owned equipment is typically scheduled on an Inland Marine policy. Rented equipment requires "Leased or Rented Equipment" coverage. Limits must match the full replacement value of the rig, not just the rental contract value.
+                        </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-background rounded-xl border border-surface-dark/5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-semibold text-lg text-surface-dark">
+                            Who handles preventative maintenance?
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-surface-dark/70 border-t border-surface-dark/5 pt-4">
+                            For owned equipment, you are responsible for all PM schedules (generator oil changes, proportioner servicing). For rentals, daily PMs (greasing, flushing) are the renter's job, while major scheduled service is handled by the rental house between deployments.
+                        </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-background rounded-xl border border-surface-dark/5 [&amp;_summary::-webkit-details-marker]:hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer font-headline font-semibold text-lg text-surface-dark">
+                            What are the tax implications (Section 179)?
+                            <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180 text-primary">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-surface-dark/70 border-t border-surface-dark/5 pt-4">
+                            Purchased rigs often qualify for Section 179 deduction, allowing you to deduct the full purchase price in the year acquired. Rental payments are generally written off as standard operating expenses. Consult your CPA for specifics to your state and corporate structure.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- 7. Dark CTA Band -->
+<section class="bg-[#221812] py-20 px-6 lg:px-8 relative overflow-hidden">
+<!-- subtle texture/pattern hint via CSS gradients -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#C88A26 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-3xl lg:text-5xl font-bold text-[#F7F0E4] leading-tight mb-8">
+                    Get Matched with a Tech-Forward Insured Spray Foam Contractor
+                </h2>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+<button class="px-8 py-4 bg-primary text-white font-label font-bold text-lg rounded-full hover:bg-opacity-90 transition-all shadow-lg hover:shadow-primary/20 active:scale-95 flex items-center gap-2">
+                        Get Matched
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<a class="px-8 py-4 bg-transparent border-2 border-accent text-accent font-label font-bold text-lg rounded-full hover:bg-accent hover:text-[#221812] transition-all flex items-center gap-2" href="tel:844-967-5247">
+<span class="material-symbols-outlined text-xl">call</span>
+                        844-967-5247
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Semantic Shell) -->
+<footer class="bg-[#221812] w-full py-12 px-6 flex flex-col items-center gap-6 mt-auto">
+<div class="font-headline text-lg font-bold text-[#F7F0E4]">
+            Contractors Choice Agency
+        </div>
+<div class="flex flex-wrap justify-center gap-6 font-body text-label-sm">
+<a class="text-[#F7F0E4]/80 hover:text-[#C88A26] hover:text-[#C88A26] transition-colors cursor-pointer" href="#">Terms of Service</a>
+<a class="text-[#F7F0E4]/80 hover:text-[#C88A26] hover:text-[#C88A26] transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-[#F7F0E4]/80 hover:text-[#C88A26] hover:text-[#C88A26] transition-colors cursor-pointer" href="#">Contact Support</a>
+<a class="text-[#F7F0E4]/80 hover:text-[#C88A26] hover:text-[#C88A26] transition-colors cursor-pointer" href="#">Get Matched</a>
+</div>
+<div class="font-body text-label-sm text-[#C88A26] text-center max-w-xl opacity-80 mt-4">
+            © 2024 Contractors Choice Agency. All rights reserved. Professional spray foam rig rental education.
+        </div>
+</footer>
+<!-- Simple interaction scripts for accordion polish (optional, HTML5 details handles most) -->
+<script>
+        // Ensure only one FAQ is open at a time for cleaner UX
+        const detailsElements = document.querySelectorAll('details');
+        detailsElements.forEach((targetDetail) => {
+            targetDetail.addEventListener('click', () => {
+                detailsElements.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
