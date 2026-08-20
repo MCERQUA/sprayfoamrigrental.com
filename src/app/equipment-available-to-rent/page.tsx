@@ -210,6 +210,13 @@ export default function EquipmentAvailablePage() {
               </Link>
               .
             </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed">
+              It&apos;s also worth matching the bundle to the job, not just the price. A cheaper
+              quote that excludes the generator isn&apos;t actually cheaper if your site has no
+              power hookup and you end up sourcing one separately on short notice. Get the full
+              scope in writing — component by component — before comparing any two quotes on
+              price alone.
+            </p>
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="rounded-xl border border-border bg-card p-8 shadow-sm">
@@ -221,6 +228,8 @@ export default function EquipmentAvailablePage() {
                 <li>• What hose length is standard, and what does extra length cost?</li>
                 <li>• Is delivery/pickup part of the quoted rate?</li>
                 <li>• Does the rate include a spray gun, or is that a separate line item?</li>
+                <li>• What's the proportioner's rated output, and does it match the job size?</li>
+                <li>• Is the rig already calibrated for open-cell or closed-cell, and can it be switched?</li>
               </ul>
             </div>
           </FadeIn>

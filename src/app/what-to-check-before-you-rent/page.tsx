@@ -51,6 +51,11 @@ const FAQS = [
     answer:
       "At minimum: the rental period and what happens if you need to extend it, the deposit amount and what damage triggers a charge against it, cancellation/rescheduling terms, what happens if the equipment fails mid-job, and delivery/pickup logistics with associated fees. If a provider can't produce a written agreement covering these, treat that as a red flag rather than a formality.",
   },
+  {
+    question: "What delivery fees should I expect when renting spray foam equipment?",
+    answer:
+      "Delivery and pickup fees are commonly billed separately from the base rental rate, and can vary by distance, site accessibility, and whether delivery falls outside standard business hours. There's no universal number — the honest move is to ask each provider for an itemized quote up front so delivery costs don't show up as a surprise on the final invoice.",
+  },
 ];
 
 const faqJsonLd = {
@@ -122,6 +127,13 @@ export default function WhatToCheckPage() {
               depends on exactly what coverage is in place and whose policy responds first. Get
               this in writing before you sign anything.
             </p>
+            <p>
+              A standard commercial auto or general liability policy doesn&apos;t automatically
+              extend to non-owned equipment you&apos;re renting for a job — that&apos;s typically
+              a separate coverage question. If you rent equipment regularly, it&apos;s worth a
+              conversation with your own agent about whether your existing policy actually
+              responds if a rented rig is damaged on your watch, rather than assuming it does.
+            </p>
           </div>
         </FadeIn>
       </Section>
@@ -144,7 +156,8 @@ export default function WhatToCheckPage() {
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Confirm the provider actually covers your job site, and whether jobs outside their
-                core area carry a surcharge or longer lead time.
+                core area carry a surcharge or longer lead time. A provider that&apos;s vague
+                about their coverage map is a sign to ask more, not fewer, questions.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
@@ -153,7 +166,8 @@ export default function WhatToCheckPage() {
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Ask for an itemized quote. Drop-off and pickup fees are frequently left out of the
-                headline rental rate.
+                headline rental rate, and some providers charge separately for after-hours or
+                weekend delivery windows.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-card p-6 shadow-sm">
@@ -162,7 +176,8 @@ export default function WhatToCheckPage() {
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Confirm power, space, and vehicle-access needs (clearance for a trailer, level
-                ground) before the delivery truck shows up.
+                ground) before the delivery truck shows up. A site that can&apos;t actually
+                accommodate the rig&apos;s footprint is a costly discovery to make on delivery day.
               </p>
             </div>
           </div>
@@ -215,7 +230,9 @@ export default function WhatToCheckPage() {
                 </h3>
                 <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
                   Ask what happens if the rig fails partway through a job — is a replacement or
-                  field service part of the agreement, or are you on your own?
+                  field service part of the agreement, or are you on your own? Also ask how
+                  quickly a replacement unit could realistically arrive, since a same-day promise
+                  and a next-day reality are two very different things when a crew is standing by.
                 </p>
               </div>
             </div>
@@ -238,6 +255,8 @@ export default function WhatToCheckPage() {
                 Confirm the rig is calibrated for the specific material and chemistry you plan to
                 use. Open-cell and closed-cell foam require different mix-ratio and pressure
                 settings — a rig calibrated for one isn&apos;t automatically ready for the other.
+                If you're switching materials mid-week, ask whether the provider handles the
+                recalibration and flush themselves or expects you to.
               </p>
             </div>
             <div>
@@ -250,7 +269,9 @@ export default function WhatToCheckPage() {
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
                 Ask whether on-site technician support or basic operation training is included.
                 This varies widely across the market — some providers include a walkthrough at
-                handover, others offer none at all.
+                handover, others offer none at all. If you're newer to a particular rig
+                configuration, phone support during business hours isn't the same as someone
+                answering at 6pm on a Saturday when a hose stops heating.
               </p>
             </div>
           </div>
