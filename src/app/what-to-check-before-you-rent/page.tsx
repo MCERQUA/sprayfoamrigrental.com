@@ -293,7 +293,9 @@ export default function WhatToCheckPage() {
             <p className="text-foreground/90 leading-relaxed mb-6">
               Ask every provider to clarify whether they price per-unit, by tier, or as a flat
               time-block — quotes aren&apos;t comparable across providers until you know which
-              model each one is using.
+              model each one is using. Two providers quoting what looks like the same day rate can
+              land very differently once tier discounts, minimums, and add-on fees are factored
+              in, so ask for the full structure before comparing any two numbers side by side.
             </p>
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="rounded-lg bg-secondary/60 p-5">
@@ -334,7 +336,8 @@ export default function WhatToCheckPage() {
           </div>
           <div className="rounded-xl border border-destructive/25 bg-destructive/5 p-8">
             <p className="text-sm text-muted-foreground mb-6">
-              Treat any of these as a reason to keep looking:
+              None of these alone is necessarily disqualifying, but more than one is a real
+              pattern worth taking seriously. Treat any of these as a reason to keep looking:
             </p>
             <ul className="space-y-4">
               {RED_FLAGS.map((flag) => (
