@@ -1,0 +1,92 @@
+SPRAYFOAMRIGRENTAL.COM — BUILD STATUS
+Built: 2026-08-20
+Operator: Contractors Choice Agency
+Worker: josh-desk-4@mesh (worker-c)
+
+REAL-BUSINESS-NAME CHECK
+--------------------------
+Cleared cleanly via serper (searches for "sprayfoamrigrental", "spray foam rig rental",
+"sprayfoamrigrental.com"). No dedicated business under this exact name/domain. Confirmed a real,
+crowded competitive market of DIFFERENT businesses under different names (sprayfoamrentals.com,
+sprayalliance.com, sanantoniosprayfoamrentals.com, sprayfoamrentalsnyc.com, masterpkg.com,
+allfoamtech.com, chicagolandsprayfoam.com/rigrental) — validates the niche, no collision.
+Full check in ai/research/01-business-profile/profile.md.
+
+PRE-EXISTING ARCHIVED FOLDER
+------------------------------
+A prior build exists at /workspace/Websites/sprayfoamrigrental.com.donotbuild/ (git: "host
+only-copy rescue 2026-08-16"). Flagged to the management-session operator before building
+(non-blocking FYI). Investigated: its palette measured hue ~208-211° (blue — violates the
+zero-blue rule) and it framed the site as an active rental-matching/marketplace service CCA has
+no verified operation of. Treated as reference-only; NOT reused. This build uses a fresh,
+warm-only palette and an honest educational-guide angle instead (see below).
+
+ANGLE
+-----
+CCA educational buyer's-guide to spray foam rig equipment rental — NOT a claimed rental
+marketplace/matching service. Corrected buzzword test applied and passed easily: "spray foam rig
+rental" is a real, mundane, bought/rented equipment service with a genuinely crowded real
+competitive market (7 real businesses found). Content strategy identified a real whitespace: a
+neutral "what to check before you rent" evaluation checklist that none of the 7 real competitors
+can credibly publish (it would undercut their own booking funnel) — built as the site's
+strongest-converting page. All content funnels to CCA's real "Get Matched with a Tech-Forward,
+Insured Spray Foam Contractor" service, never implying CCA rents or brokers equipment.
+
+BUILD SUMMARY
+-------------
+ROUTES: 11 top-level pages + 4 seeded blog posts = 15 pages, 19 generated static routes
+  (Home, Rent vs. Buy, Equipment Available to Rent, What to Check Before You Rent, Get Matched,
+   About, Contact, Blog index + 4 posts, Privacy, Terms, sitemap.xml, robots.txt, 404)
+
+HOMEPAGE: 8 sections (hero, trust/definition band, 3-pillar teaser grid, why-rental-is-a-real-
+  decision, equipment primer, honesty/CaveatCallout note, CTA band, blog teaser)
+
+IMAGES: 8 real AI-generated (Gemini) images, 1.2MB total. RGB-scanned by the image fork before
+  finalizing — all 8 passed avgR > avgB with a wide margin (no blue-cast). Fork also caught and
+  fixed two quality issues on its own before finalizing: gibberish AI-hallucinated gauge-label
+  text on the proportioner close-up, and a fabricated logo decal + visible driver silhouette on
+  the delivery-rig image — both regenerated with explicit corrective prompts.
+
+STITCH COVERAGE: 3 real Stitch-generated screens (home, rent-vs-buy, what-to-check-before-you-
+  rent) — verified via ls .stitch-pages/*.html. Font enum note: BITTER/SOURCE_SANS_PRO are NOT
+  valid create_design_system font enum values (returned "Request contains an invalid argument");
+  SPACE_GROTESK/WORK_SANS worked — the actual site fonts (Bitter/Source Sans 3 via next/font)
+  were still applied correctly in the real Next.js build; only the Stitch design-system metadata
+  used a fallback enum. Worth remembering for future builds wanting non-listed font pairings.
+
+PALETTE: warm earth tones only — mahogany-rust #82401F / amber-honey #C88A26 / warm ivory-
+  parchment #F7F0E4 / espresso-charcoal #221812. Zero purple/pink/blue/emoji. First fleet build
+  this batch with NO green secondary accent (all 5 prior builds paired warm primary + green
+  secondary) — deliberately distinct. First use of Bitter + Source Sans 3 font pairing.
+
+FORK DISCIPLINE: 3 hard-scoped forks this build (research, image generation, pillar pages) — the
+  latter two ran CONCURRENTLY with non-overlapping scopes (public/images/ vs. 3 named src/app/
+  route directories) per the "3 clean builds in a row" discipline. Zero concurrency incidents;
+  all forks confirmed in their completion reports that no shared component or out-of-scope file
+  was touched.
+
+BUILD: pnpm run build GREEN, clean on first attempt (and again on final re-verification after
+  cleanup). Static export, next 15.3.9, react 19.2.0, pnpm-lock.yaml only. Branch: main.
+  Caught and fixed a real scaffold bug before first build attempt: next.config.ts was missing
+  `output: "export"` / `images.unoptimized: true` / the MDX wrapper (would have been a static-
+  export build blocker) — copied from the verified sprayfoamrigtech.com pattern.
+
+PNPM-WORKSPACE.YAML: correct from initial scaffold (packages: ["."], not packages: []).
+
+GATE: pre-deploy-content-check.sh → initial run FAILED on scrim-decay (two Stitch REFERENCE HTML
+  files — home.html's hero gradient decayed to a transparent top stop, and a decorative image
+  tile on both home.html and rent-vs-buy.html used a 20%-opacity overlay). Neither had actual
+  text sitting on the weak point (confirmed by inspecting surrounding markup), but fixed both to
+  ≥50% per the gate's literal requirement and prior-build precedent. Re-ran → PASS (exit 0) on
+  second attempt; re-verified again at final commit.
+
+VISUAL QA: playwright-cli, desktop (1440x900) + mobile (390x844). Home, Rent vs. Buy pages
+  checked. Zero console errors on either page (only expected React DevTools/Fast Refresh
+  messages). Confirmed sticky mobile Call/Get Matched bar appears correctly on scroll. Confirmed
+  section content that appeared "empty" in a full-page screenshot was the expected whileInView
+  animation/full-page-screenshot artifact (content renders correctly once scrolled into view,
+  verified via targeted scroll-position screenshots) — not a real defect.
+
+NOT DONE (per instructions): no push to GitHub (MCERQUA/sprayfoamrigrental.com), no Netlify
+  deploy — build + commit only, reporting to manager for host hand-off. sprayfoamrentalrig.com
+  (reversed word-order twin) was NOT touched — reserved for the manager's separate reconciliation.
